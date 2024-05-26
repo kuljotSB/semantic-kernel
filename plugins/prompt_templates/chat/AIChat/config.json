@@ -1,0 +1,23 @@
+{
+    "schema": 1,
+    "description": "to have simple chatting session with the user",
+    "execution_settings": {
+        "default": {
+            "max_tokens":1000,
+            "temperature":0.7
+            
+        }
+    },
+    "input_variables": [
+        {
+            "name": "query",
+            "description": "the query of the user",
+            "default": ""
+        },
+        {
+            "name":"chat_history",
+            "description":"the chat conversation history",
+            "default":""
+        }
+    ]
+}
