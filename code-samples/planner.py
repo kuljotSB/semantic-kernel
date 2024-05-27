@@ -22,16 +22,21 @@ planner = SequentialPlanner(
     service_id
 )
 
-kernel.add_plugin(parent_directory="../plugins/prompt_templates/", plugin_name="basic_plugin")
+kernel.add_plugin(parent_directory="../plugins/prompt_templates/", plugin_name="writerPlugin")
 
 for plugin_name, plugin in kernel.plugins.items():
     for function_name, function in plugin.functions.items():
         print(f"Plugin: {plugin_name}, Function: {function_name}")
+        
+text=" "
+        
+with open("../data/chatgpt.txt", "r") as file:
+    chatgpt = file.read()
+    text = text+chatgpt
     
-goal = f"generate contact information and greeting based on the following information: \n" \
-    "my name is kuljot and am 18 years old \n" \
-        "I live in New York and my contact number is 1234567890 \n" \
-            "my email id is sam@gmail.com"  
+    
+goal = f"summarise this text: {text} and email it to sam@gmail.com "
+        
 async def call_planner():
     return await planner.create_plan(goal)
 

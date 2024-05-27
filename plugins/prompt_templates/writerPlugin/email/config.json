@@ -1,0 +1,23 @@
+{
+    "schema": 1,
+    "description": "to send an email to the specified email address containing a specified message",
+    "execution_settings": {
+        "default": {
+            "max_tokens":1000,
+            "temperature":0.7
+            
+        }
+    },
+    "input_variables": [
+        {
+            "name": "email_id",
+            "description": "the email address to which the mail has to be sent",
+            "default": ""
+        },
+        {
+            "name":"text",
+            "description":"the message to be sent in the email",
+            "default":""
+        }
+    ]
+}

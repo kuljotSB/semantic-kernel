@@ -1,0 +1,5 @@
+you will be required to send an email to {{$email_id}} containing the specified message {{$text}}
+
+the output should look something like this:
+To:(the email_id to which the message is to be sent)
+body:(the message to be sent in the email)
