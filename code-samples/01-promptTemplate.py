@@ -4,7 +4,6 @@ from semantic_kernel.functions import KernelArguments
 import os
 from dotenv import load_dotenv
 import asyncio
-
 kernel = Kernel()
 
 service_id = "default"
