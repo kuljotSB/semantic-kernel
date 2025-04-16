@@ -5,7 +5,7 @@
 ![Azure](https://img.shields.io/badge/deployed%20on-Azure-blueviolet)
 ![Udemy Course](https://img.shields.io/badge/Udemy-View_Course-orange?logo=Udemy)
 
-💻 “Engineer by day, prompt whisperer by night, sleep-deprived spirit 24/7.” — M.Singh
+
 
 
 
